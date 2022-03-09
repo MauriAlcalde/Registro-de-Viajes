@@ -23,7 +23,7 @@ para que posteriormente pueda elaborar sus informes con esta información.
 ## Ejecución 
 
 1. Clonal el repositorio.
-2. backend 
+2. Backend 
 -> En la raiz utilizar el comando "npm install" 
 -> Utilizar el comando "npm start"
 3. Frontend
@@ -36,18 +36,15 @@ para que posteriormente pueda elaborar sus informes con esta información.
 Puede crear una nueva cuenta o utilizar las siguientes cuentas:
 
 ### Trabajadores:
-**usuario**: nicolas  
-**password**: asdqwe123  
-
-**usuario**: luciano  
-**password**: asdqwe123  
+**usuario**: Carlos  
+**password**: Asd12345  
 
 ### Directora:
-**usuario**: directora   
-**password**: asdqwe123   
+**usuario**: Maria    
+**password**: directora123   
 
 Al ingresar a la app le pedira ingresar con su cuenta o bien crear una en caso de no tener.
-Una vez ingresado podra ver sus viejas registrados y cargar un nuevo viaje.
+Una vez ingresado podra ver sus viajes registrados y cargar un nuevo viaje.
 En el caso de que la cuenta sea de la directora le permitira ver todos los viajes registrados.
 
 ## Tecnologias utilizadas
