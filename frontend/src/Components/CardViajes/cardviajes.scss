@@ -1,0 +1,36 @@
+@import "../../styles/colors";
+@import "../../styles/variables";
+@import "../../styles/mixin";
+@import "../../styles/breakpoint";
+
+.card__viajes{
+    min-width: 45%;
+    min-height: 450px;
+    height: 600px;
+    margin: 5px;
+    border-radius: 5px;
+    // border: 1px solid $azul-claro;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $naranja;
+
+    &__campos{
+        background-color: $azul-claro;
+        border-radius: 5px;
+        margin: 5px 10px;
+        text-align: center;
+
+        span{
+            color: white;
+            font-weight: bold;
+        }
+        p{
+            color: white;
+        }
+    }
+    .registrado{
+        color: rgb(59, 255, 20);
+    }
+    
+}

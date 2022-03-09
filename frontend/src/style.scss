@@ -1,0 +1,252 @@
+@import "./styles/colors";
+@import "./styles/variables";
+@import "./styles/mixin";
+@import "./styles/breakpoint";
+body{
+  margin:0;
+  padding:0;
+}
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $fondo;
+  @include flex(row,center,flex-start);
+}
+
+// login
+
+.container__login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__form {
+    width: 80vw;
+    height: 80vh;
+    max-width: 400px;
+    max-height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+    background-color: $primario;
+
+    h2 {
+      text-align: center;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    input {
+      width: 80%;
+      height: 5vh;
+      margin-top: 10px;
+      text-align: center;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+    }
+    input::placeholder {
+      text-align: center;
+    }
+    input[type="submit"] {
+      color: white;
+      background-color: $azul-claro;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__btn__registro {
+    background-color: $primario;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1rem;
+    a{
+      text-decoration: none;
+      color: white;
+      background-color:$azul-claro;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+    span {
+      margin: 5px;
+      color: white;
+    }
+
+    button {
+      margin: 5px;
+      color: white;
+      background-color: $azul-claro;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}
+
+.border__bot {
+  width: 50px;
+  border-bottom: 1px solid $verde;
+}
+.mb-15 {
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
+.input__error {
+  border: 2px solid $bordo !important;
+}
+.input__check {
+  border: 2px solid $verde !important;
+}
+
+.container__views {
+  @include container(90vw, 90vh, $primario, 5vh 2vw);
+  @include flex(row,center,center);
+  border-radius: 5px;
+}
+
+.container__form__viajes{
+  @include container(auto, auto, $naranja, auto);
+  @include flex(column,space-evenly,center);
+  border-radius: 5px;
+  padding: 10px;
+  h2{
+    color: rgb(55, 54, 62);
+    font-weight: bold;
+  }
+  form {
+    // width: 80vw;
+    // min-height: 60vh;
+    max-width: 60vw;
+    padding:25px 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+    background-color: $primario;
+
+    textarea{
+      width: 85%;
+      height: 170px;
+      max-width: 85%;
+      font-size: 1.2rem;
+      text-align: center;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      resize: none;
+      margin-top: 10px;
+    }
+    textarea::placeholder{
+      text-align: center;
+    }
+    /* .inputNombre{
+      margin-top: 5px;
+    } */
+    h2 {
+      text-align: center;
+      color: white;
+      font-size: 1.5rem;
+    }
+    input,select {
+      width: 80%;
+      height: 5vh;
+      margin-top: 10px;
+      text-align: center;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+    }
+    input::placeholder {
+      text-align: center;
+    }
+    input[type="submit"] {
+      color: white;
+      background-color: $azul-claro;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover{
+      background-color: rgb(201, 90, 127);
+    }
+  }
+}
+
+.container_viajes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  min-height: 90vh;
+  background-color: $primario;
+  margin: 5vh;
+}
+.container_viajes h1 {
+  margin-bottom: 15px;
+
+}
+
+.container__viajes{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  h1{
+    color: white;
+  }
+
+  &__cards{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+}
+.cajaForm{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80vw;
+}
+.cajaInput{
+  color: white;
+  text-align: center;
+  width: 20vw;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.cajaUno{
+  display: flex;
+  flex-direction: row;
+}
+.cajaDos{
+  display: flex;
+  flex-direction: row;
+}
+.cajaTres{
+  display: flex;
+  flex-direction: row;
+}

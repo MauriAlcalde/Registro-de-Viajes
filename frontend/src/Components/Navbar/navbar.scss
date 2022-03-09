@@ -1,0 +1,70 @@
+@import "../../styles/colors";
+@import "../../styles/variables";
+@import "../../styles/mixin";
+@import "../../styles/breakpoint";
+
+.navbar {
+  position: relative;
+}
+
+.container__navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include dimensions(100vw, 40vh);
+  @include container(90vw, 90vh, $primario, 5vh 0);
+  border-radius: 5px;
+  margin-left: 1vw;
+
+  h1{
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-size: bold;
+    text-align: center;
+    color:white;
+    justify-self: flex-start;
+  }
+
+  &__links {
+    @include dimensions(100%, 100%);
+    @include flex(column, center, center);
+
+    
+
+    a {
+      font-size: 2rem;
+      margin: 10px 0;
+      color: white;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    a:hover{
+        font-size: 2.5rem;
+    }
+  }
+  @media (min-width: $mobile) {
+    width: $width-navbar;
+  }
+}
+
+.btn__menu {
+  @include dimensions(50px, 50px);
+
+  position: fixed;
+  background-color: $verde;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  transition: all 0.5s;
+
+  @media (min-width: $mobile) {
+    display: none;
+  }
+}
+.btn__menu:hover {
+    @include dimensions(60px, 60px);
+}
+.border_b30{
+  width: 30px;
+  border-bottom: 1px solid $verde;
+}

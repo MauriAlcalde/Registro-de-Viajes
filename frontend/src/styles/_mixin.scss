@@ -1,0 +1,18 @@
+@mixin container($width, $height, $background,$margin){
+    width: $width;
+    min-height: $height;
+    background-color: $background;
+    margin: $margin;
+}
+
+@mixin flex($direction, $jfc, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jfc;
+    align-items: $align;
+}
+
+@mixin dimensions($width, $height){
+    width: $width;
+    height: $height;
+}
