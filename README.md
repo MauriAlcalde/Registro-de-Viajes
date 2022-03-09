@@ -1,4 +1,4 @@
-# Caso 2 desafío forEach
+# Challenge Tecnico FullStack forEach
 
 Generar una aplicación que permita a los colaboradores de la empresa poder registrar 
 sus viajes.
